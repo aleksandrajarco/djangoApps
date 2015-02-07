@@ -2,21 +2,17 @@
 	<head>
 	<title>My blog Django </title>
 	</head>
+
+
+
+	{% for post in posts}
 	<div>
-		<h1><a href="">Django Blog </a></h1>
-
+		<p>published: {{post.published_date}}</p>
+		<h1><a href="">{{post.ttle}}</a></h1>
+		<p>{{post.text|linebreaks}}</p>
 	</div>
-
-	<div>
-		<h1>My First Post  </h1>
-	</div>
-
-	<div>
-		<h1>My Second Post  </h1>
-	</div>
-
-
-
+	{% endfor%}
+	
 
 
 
