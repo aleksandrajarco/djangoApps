@@ -1,0 +1,23 @@
+<html>
+	<head>
+	<title>My blog Django </title>
+	</head>
+	<div>
+		<h1><a href="">Django Blog </a></h1>
+
+	</div>
+
+	<div>
+		<h1>My First Post  </h1>
+	</div>
+
+	<div>
+		<h1>My Second Post  </h1>
+	</div>
+
+
+
+
+
+
+</html>
