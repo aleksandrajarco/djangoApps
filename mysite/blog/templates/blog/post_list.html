@@ -1,17 +1,23 @@
+{% load staticfiles %}
 <html>
 	<head>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
 	<title>My blog Django </title>
 	</head>
 
 
 
-	{% for post in posts%}
-	<div>
-		<p>published: {{post.published_date}}</p>
-		<h1><a href="">{{post.ttle}}</a></h1>
-		<p>{{post.text|linebreaks}}</p>
-	</div>
-	{% endfor%}
+	
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaks }}</p>
+    </div>
+{% endfor %}
 	
 
 
